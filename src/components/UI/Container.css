@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-transition: background-color 256ms;
+  transition: background-color 256ms;
+  max-width: 1164px;
+}

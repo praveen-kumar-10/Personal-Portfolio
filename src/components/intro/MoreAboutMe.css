@@ -1,0 +1,90 @@
+.content {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content .container h1 {
+  font-size: var(--text-size);
+  margin-bottom: 5rem;
+}
+
+.container .edu_wrapper {
+  margin-top: -2rem;
+}
+
+.vertical-timeline-element-icon {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-timeline-element-icon::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #92bcff 0%, #b5e8ff 100%);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px rgb(160, 225, 255);
+}
+
+.vertical-timeline-element--work {
+  font-family: var(--poppins);
+  color: #424242;
+}
+
+.vertical-timeline-element--work h3 {
+  opacity: 0.7;
+  font-size: 15px;
+  margin-bottom: 0px !important;
+}
+
+.date {
+  color: #0062ff;
+  font-weight: bold !important;
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 1.5px !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .content .container h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .vertical-timeline-element--work h2 {
+    font-size: 18px !important;
+  }
+  .vertical-timeline-element--work h3 {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .vertical-timeline-element--work h2 {
+    font-size: 16px !important;
+  }
+  .vertical-timeline-element--work h3 {
+    font-size: 13px !important;
+  }
+  .date {
+    font-size: 10px !important;
+  }
+}

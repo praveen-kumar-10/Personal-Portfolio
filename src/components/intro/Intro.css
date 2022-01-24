@@ -1,0 +1,150 @@
+header {
+  width: 100vw;
+  height: max-content;
+  min-height: 100vh;
+  background-image: linear-gradient(#34a0ff 0%, #00f2fe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+header .container {
+  width: 100%;
+  margin-top: 6rem;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.left_child {
+  min-width: 45rem;
+  height: max-content;
+  padding-bottom: 2rem;
+}
+
+.left_child h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 80px;
+  letter-spacing: 10px;
+  height: 250px;
+}
+
+.left_child h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding: 5px 20px;
+  border-left: 5px solid #fff;
+  margin-bottom: 4rem;
+}
+
+.left_child .contact-me {
+  padding: 14px 26px;
+  border: 3px solid whitesmoke;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.right_child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.right_child #bg {
+  position: absolute;
+  bottom: -7rem;
+  right: -9rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.right_child #profile_img {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 50%;
+}
+
+.right_child #profile_img img {
+  border-radius: 50%;
+  width: 20rem;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 1086px) {
+  .left_child {
+    min-width: 36rem;
+  }
+  .left_child h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  header .container {
+    flex-direction: column-reverse;
+    justify-content: flex-start !important;
+    margin-top: 2rem;
+    min-height: 30rem;
+  }
+  .left_child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left_child h1 {
+    font-size: 40px;
+    height: fit-content;
+    margin-bottom: 0;
+    height: 8rem;
+    text-align: center;
+  }
+  .left_child h3 {
+    font-size: 25px;
+    margin-bottom: 0rem;
+    border: none;
+  }
+
+  .left_child .contact-me {
+    font-size: 14px;
+    display: none;
+  }
+
+  .right_child #profile_img img {
+    width: 16rem;
+  }
+
+  .right_child #bg {
+    width: 30rem;
+    top: -7.5rem;
+    left: -7.5rem;
+  }
+
+  .right_child #bg img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .left_child {
+    width: 100%;
+    min-width: 100%;
+  }
+}

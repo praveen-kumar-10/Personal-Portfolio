@@ -1,0 +1,161 @@
+#about_section .container {
+  width: 100%;
+  padding: 5rem 0rem;
+
+  align-items: center;
+}
+
+.left_section {
+  width: 40%;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left_section #sqr {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 20px solid #e4e1fe;
+}
+
+.left_section #sqr a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+  box-shadow: 10px 10px 20px rgba(0, 98, 255, 0.2);
+}
+
+.left_section #sqr a:hover {
+  background: rgb(255, 255, 255);
+}
+
+#sqr a:nth-child(1),
+#sqr a:nth-child(2),
+#sqr a:nth-child(3),
+#sqr a:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  color: #2a1b5a;
+}
+
+#sqr a:nth-child(1) {
+  top: -90px;
+  left: -70px;
+  border-radius: 20px 20px 0 20px;
+}
+
+#sqr a:nth-child(2) {
+  top: -50px;
+  right: -70px;
+  border-radius: 20px 20px 20px 0;
+}
+
+#sqr a:nth-child(4) {
+  bottom: -100px;
+  right: -70px;
+  border-radius: 0px 20px 20px 20px;
+}
+
+#sqr a:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  bottom: -75px;
+  left: -100px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+#sqr a:nth-child(3) .fa {
+  font-size: 50px;
+}
+
+.fa {
+  font-size: 40px;
+  margin: 10px 0px;
+}
+
+.hackerrank {
+  color: #1ba94c;
+}
+
+.linkedin {
+  color: rgb(77, 77, 255);
+}
+
+/* =============== RIGHT SECTION ================== */
+
+.right_section {
+  width: 60%;
+}
+
+.container .right_section h1 {
+  font-size: var(--text-size);
+  border-left: var(--border);
+}
+
+.container .right_section p {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  color: #2d1765;
+  font-size: 22px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.container .right_section #more {
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(77, 77, 255);
+  padding: 0.5rem 0;
+}
+
+#more:hover {
+  border-bottom: 2px solid rgb(77, 77, 255);
+}
+
+@media only screen and (max-width: 1216px) {
+  .right_section {
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1086px) {
+  .container .right_section p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #about_section .container {
+    flex-direction: column-reverse;
+    padding: 3rem 0;
+  }
+  .left_section {
+    width: 100%;
+  }
+  .right_section {
+    width: 90%;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+  .container .right_section h1 {
+    border: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 35px;
+  }
+}

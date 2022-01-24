@@ -1,0 +1,196 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: background-color 256ms ease-in-out;
+  transition: background-color 256ms ease-in-out;
+  -webkit-box-shadow: 0 20px 34px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 20px 34px 0 rgb(0 0 0 / 10%);
+  z-index: 10;
+}
+
+nav .container {
+  height: 80px;
+}
+
+nav .container .logo {
+  color: rgb(0, 56, 4);
+  min-width: fit-content;
+  height: 100%;
+}
+
+/* ================= LINKS ================= */
+
+nav .container .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+}
+
+nav .container .links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 55px 0 0;
+  padding: 10px 0;
+  width: auto;
+  color: var(--black);
+}
+
+nav .container .links a span {
+  font-weight: 500;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+nav .container .links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+nav .container .links a:hover::after {
+  width: 100%;
+}
+
+/* ================= LINKS ================= */
+
+/* ============== Resume Button =================== */
+
+.Cg {
+  padding: 14px 26px 14px 26px;
+  height: 60px;
+  outline: none;
+  background-color: #f1f7ff;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: background-color 256ms ease-in-out;
+  transition: background-color 256ms ease-in-out;
+  cursor: pointer;
+}
+
+.Cg:hover {
+  background-color: #e5f0ff;
+}
+
+.Bg,
+.Cg {
+  display: flex;
+  align-items: center;
+}
+
+.Gg {
+  color: #498aff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+/* ============== Resume Button =================== */
+
+.progress-container {
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 30px 0 rgba(121, 128, 255, 0.37);
+  backdrop-filter: blur(4px);
+}
+
+.progress-bar {
+  height: 8px;
+  background-image: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  width: 0%;
+  border-radius: 0 2px 2px 0;
+}
+
+.responsive_nav {
+  display: none !important;
+  position: fixed;
+  bottom: -1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  z-index: 10;
+  border: 2px solid rgba(218, 238, 255, 0.52);
+  box-shadow: 3px 3px 20px rgba(115, 178, 230, 0.753);
+}
+
+.responsive_nav #active_state {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 2.4rem;
+  left: 0.6rem;
+  opacity: 0.3;
+  background: #a5c5ff;
+  border-radius: 0.7rem;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+
+.responsive_nav a {
+  padding: 0.5rem 1rem;
+  min-width: 5rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: all 0.3s linear;
+  font-family: var(--poppins);
+}
+
+@media only screen and (max-width: 950px) {
+  nav .container .links {
+    display: none;
+  }
+  nav .container {
+    height: 60px;
+    justify-content: center;
+  }
+  nav .container .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .responsive_nav {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 582px) {
+  nav .container {
+    height: 50px;
+  }
+  .responsive_nav {
+    width: 90%;
+  }
+  .responsive_nav a {
+    min-width: 0px !important;
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .responsive_nav a {
+    font-size: 12px;
+  }
+}
