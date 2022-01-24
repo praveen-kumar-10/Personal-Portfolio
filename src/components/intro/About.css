@@ -1,3 +1,7 @@
+#about_section {
+  border: 1px solid red;
+}
+
 #about_section .container {
   width: 100%;
   padding: 5rem 0rem;
@@ -35,7 +39,9 @@
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 13px;
-  box-shadow: 10px 10px 20px rgba(0, 98, 255, 0.2);
+  /* box-shadow: 10px 10px 20px rgba(0, 98, 255, 0.2); */
+  border: 2px solid rgba(218, 238, 255, 0.52);
+  box-shadow: 4px 4px 30px rgba(115, 178, 230, 0.753);
 }
 
 .left_section #sqr a:hover {

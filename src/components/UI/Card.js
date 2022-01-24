@@ -27,7 +27,7 @@ const Card = ({ image, title, language, link }) => {
         <h1>{title}</h1>
         <h2>Developed Using {language}</h2>
       </div>
-      <a href="/">Go to Project</a>
+      {/* <a href="#">Go to Project</a> */}
     </div>
   );
 };
