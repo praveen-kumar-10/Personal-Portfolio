@@ -136,7 +136,6 @@ nav .container .links a:hover::after {
 .responsive_nav #active_state {
   content: "";
   position: absolute;
-  width: 7rem;
   height: 2.4rem;
   left: 0.6rem;
   opacity: 0.3;

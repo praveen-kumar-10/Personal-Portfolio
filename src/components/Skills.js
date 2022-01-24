@@ -9,28 +9,28 @@ import Container from "./UI/Container";
 import SvgM from "./UI/SvgM";
 
 const Skills = () => {
-  const [windowDimensions, setWindowDimensions] = useState([]);
-  window.onresize = () => {
-    setWindowDimensions([window.innerWidth, window.innerHeight]);
+  const [width, setWidth] = useState(window.innerWidth);
+  var windowDimensions = window.innerWidth;
+  const resizefun = () => {
+    windowDimensions = window.innerWidth;
+    setWidth(window.innerWidth);
+    console.log(windowDimensions);
   };
+  window.addEventListener("resize", resizefun);
+
   useEffect(() => {
-    setWindowDimensions([window.innerWidth, window.innerHeight]);
-  }, []);
+    resizefun();
+    console.log("hello");
+  }, [windowDimensions[0]]);
   return (
     <section id="skills_section">
       <Container>
         <h1>Skills</h1>
-        {windowDimensions[0] > 1210 && <Svg className="skills-svg" />}
-        {windowDimensions[0] < 1210 && windowDimensions[0] > 870 && (
-          <Svg86 className="skills-svg" />
-        )}
-        {windowDimensions[0] <= 870 && windowDimensions[0] > 650 && (
-          <Svg64 className="skills-svg" />
-        )}
-        {windowDimensions[0] <= 650 && windowDimensions[0] > 468 && (
-          <SvgMobile className="skills-svg" />
-        )}
-        {windowDimensions[0] <= 468 && <SvgM className="skills-svg" />}
+        {width > 1210 && <Svg className="skills-svg" />}
+        {width < 1210 && width > 870 && <Svg86 className="skills-svg" />}
+        {width <= 870 && width > 650 && <Svg64 className="skills-svg" />}
+        {width <= 650 && width > 468 && <SvgMobile className="skills-svg" />}
+        {width <= 468 && <SvgM className="skills-svg" />}
       </Container>
     </section>
   );

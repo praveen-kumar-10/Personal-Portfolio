@@ -6,7 +6,7 @@ import Container from "../UI/Container";
 
 import { Link } from "react-scroll";
 
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/Resume(Praveen_Kumar).pdf";
 
 const Navbar = () => {
   return (
@@ -51,7 +51,13 @@ const Navbar = () => {
             <span>Contact</span>
           </a>
 
-          <a id="resume_link" href={Resume} download target="_blank">
+          <a
+            id="resume_link"
+            href={Resume}
+            download
+            rel="noopener"
+            target="_blank"
+          >
             <span>Resume</span>
           </a>
         </div>

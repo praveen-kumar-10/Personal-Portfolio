@@ -14,7 +14,7 @@ const About = () => {
         <div className="left_section">
           <div id="sqr">
             <a
-              href="https://github.com/praveen-F1"
+              href="https://github.com/praveen-kumar-10"
               target="_blank"
               rel="noreferrer"
             >

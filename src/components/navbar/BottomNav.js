@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/Resume(Praveen_Kumar).pdf";
 
 const BottomNav = () => {
   var links = document.getElementsByClassName("link");
-  window.addEventListener("resize", () => {
-    var active_state = document.getElementById("active_state");
-    links[0].style.fontWeight = "bold";
-    active_state.style.width = links[0].offsetWidth + "px";
-  });
+
+  const resizefun = () => {
+    links[0].style.fontWeight = "500";
+  };
+  window.addEventListener("resize", resizefun);
+
   useEffect(() => {
+    resizefun();
     var active_state = document.getElementById("active_state");
-    links[0].style.fontWeight = 500;
     active_state.style.width = links[0].offsetWidth + "px";
-  }, []);
+    active_state.style.left = links[0].offsetLeft + "px";
+  });
   const activeLink = (event) => {
     var active_state = document.getElementById("active_state");
 
@@ -73,6 +75,7 @@ const BottomNav = () => {
         download
         target="_blank"
         className="link"
+        rel="noreferrer"
       >
         Resume
       </a>
