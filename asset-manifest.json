@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Personal-Portfolio/static/css/main.742c5ff8.css",
-    "main.js": "/Personal-Portfolio/static/js/main.d3ce7d72.js",
+    "main.js": "/Personal-Portfolio/static/js/main.42a70e1c.js",
     "static/media/bg.gif": "/Personal-Portfolio/static/media/bg.8c52ef057edb1736e499.gif",
     "static/media/Resume(Praveen_Kumar).pdf": "/Personal-Portfolio/static/media/Resume(Praveen_Kumar).23c0d57c3142df13ee1b.pdf",
     "static/media/profilePhoto.png": "/Personal-Portfolio/static/media/profilePhoto.c81bd6516a3ffa442ce8.png",
     "index.html": "/Personal-Portfolio/index.html",
     "static/media/arrowup.svg": "/Personal-Portfolio/static/media/arrowup.a2ab269e73d91bba041f139e963c03be.svg",
     "main.742c5ff8.css.map": "/Personal-Portfolio/static/css/main.742c5ff8.css.map",
-    "main.d3ce7d72.js.map": "/Personal-Portfolio/static/js/main.d3ce7d72.js.map"
+    "main.42a70e1c.js.map": "/Personal-Portfolio/static/js/main.42a70e1c.js.map"
   },
   "entrypoints": [
     "static/css/main.742c5ff8.css",
-    "static/js/main.d3ce7d72.js"
+    "static/js/main.42a70e1c.js"
   ]
 }
