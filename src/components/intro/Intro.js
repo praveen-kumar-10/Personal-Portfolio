@@ -1,6 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
+import Resume from "../assets/Resume(Praveen_Kumar).pdf";
+
 import "./Intro.css";
 
 import photo from "../assets/profilePhoto.png";
@@ -26,8 +28,13 @@ const Intro = () => {
             />
           </h1>
           <h3>STUDENT</h3>
-          <a className="contact-me" href="/">
-            Contact Me
+          <a
+            href={Resume}
+            download="Resume(Praveen_Kumar).pdf"
+            className="resume_download"
+            rel="noreferrer"
+          >
+            Download Resume
           </a>
         </div>
         <div className="right_child">

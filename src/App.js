@@ -17,9 +17,6 @@ import BottomNav from "./components/navbar/BottomNav";
 library.add(fab, faCheckSquare, faBars);
 
 function App() {
-  window.addEventListener("resize", (e) => {
-    console.log(e);
-  });
   return (
     <div className="App">
       <ScrollBtn />

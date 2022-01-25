@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./Navbar.css";
 import { Link } from "react-scroll";
+
 import Resume from "../assets/Resume(Praveen_Kumar).pdf";
 
 const BottomNav = () => {
@@ -29,57 +30,81 @@ const BottomNav = () => {
     active_state.style.width = event.target.offsetWidth + "px";
   };
   return (
-    <div className="responsive_nav">
-      <div id="active_state"></div>
-      <Link
-        activeClass="active"
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={100}
-        onClick={activeLink}
-        className="link"
-      >
-        Home
-      </Link>
-      <Link
-        activeClass="active"
-        to="about_section"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={activeLink}
-        className="link"
-      >
-        About
-      </Link>
-      <Link
-        activeClass="active"
-        to="projects_section"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={activeLink}
-        className="link"
-      >
-        Projects
-      </Link>
+    <>
+      <div className="responsive_nav">
+        <div id="active_state" />
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={100}
+          onClick={activeLink}
+          className="link"
+        >
+          Home
+        </Link>
+        <Link
+          activeClass="active"
+          to="about_section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={activeLink}
+          className="link"
+        >
+          About
+        </Link>
+        <Link
+          activeClass="active"
+          to="skills_section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={activeLink}
+          className="link"
+        >
+          Skills
+        </Link>
+        <Link
+          activeClass="active"
+          to="certificate_section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={activeLink}
+          className="link"
+        >
+          Certificates
+        </Link>
+        <Link
+          activeClass="active"
+          to="projects_section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={activeLink}
+          className="link"
+        >
+          Projects
+        </Link>
 
-      <a
-        id="resume_link"
-        href={Resume}
-        onClick={activeLink}
-        download
-        target="_blank"
-        className="link"
-        rel="noreferrer"
-      >
-        Resume
-      </a>
-    </div>
+        <a
+          href={Resume}
+          onClick={activeLink}
+          className="link"
+          download="Resume(Praveen_Kumar).pdf"
+          rel="noreferrer"
+        >
+          Resume
+        </a>
+      </div>
+    </>
   );
 };
 

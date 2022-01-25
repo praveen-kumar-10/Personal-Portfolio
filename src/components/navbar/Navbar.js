@@ -12,9 +12,19 @@ const Navbar = () => {
   return (
     <nav>
       <Container>
-        <a className="logo" href="/">
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={100}
+          className="logo"
+        >
           <Logo />
-        </a>
+        </Link>
+        {/* <a className="logo" href="/">
+        </a> */}
         <div className="links">
           <Link
             activeClass="active"
@@ -38,6 +48,26 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass="active"
+            to="skills_section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <span>Skills</span>
+          </Link>
+          <Link
+            activeClass="active"
+            to="certificate_section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <span>Certificates</span>
+          </Link>
+          <Link
+            activeClass="active"
             to="projects_section"
             spy={true}
             smooth={true}
@@ -47,19 +77,24 @@ const Navbar = () => {
             <span>Projects</span>
           </Link>
 
-          <a href="/">
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={100}
+          >
             <span>Contact</span>
-          </a>
+          </Link>
 
-          <a
-            id="resume_link"
+          {/* <a
             href={Resume}
-            download
-            rel="noopener"
-            target="_blank"
+            download="Resume(Praveen_Kumar).pdf"
+            rel="noreferrer"
           >
             <span>Resume</span>
-          </a>
+          </a> */}
         </div>
       </Container>
       <div className="progress-container">

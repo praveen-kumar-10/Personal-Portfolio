@@ -14,13 +14,11 @@ const Skills = () => {
   const resizefun = () => {
     windowDimensions = window.innerWidth;
     setWidth(window.innerWidth);
-    console.log(windowDimensions);
   };
   window.addEventListener("resize", resizefun);
 
   useEffect(() => {
     resizefun();
-    console.log("hello");
   }, [windowDimensions[0]]);
   return (
     <section id="skills_section">

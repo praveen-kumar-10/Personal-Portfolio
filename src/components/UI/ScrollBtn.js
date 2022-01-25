@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
 import "./ScrollBtn.css";
-import arrow from "../assets/arrowup.svg";
+import arrow from "../assets/arrow_up.svg";
 
 export default class ScrollToTop extends Component {
+  // var scroll_to_top = document.getElementsByClassName('scroll-to-top');
   constructor(props) {
     super(props);
     this.state = {
@@ -30,23 +31,26 @@ export default class ScrollToTop extends Component {
     }
   }
 
-  scrollToTop() {
+  scrollToTop(e) {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+    document.documentElement.style.setProperty("--show", "block");
   }
 
   render() {
     const { is_visible } = this.state;
     return (
-      <div className="scroll-to-top">
+      <>
         {is_visible && (
-          <div className="scrollbtn_wrapper" onClick={() => this.scrollToTop()}>
-            <img id="arrow" src={arrow} alt="top" />
+          <div className="scroll-to-top" onClick={(e) => this.scrollToTop(e)}>
+            <div className="scrollbtn_wrapper">
+              <img id="arrow" src={arrow} alt="top" />
+            </div>
           </div>
         )}
-      </div>
+      </>
     );
   }
 }
