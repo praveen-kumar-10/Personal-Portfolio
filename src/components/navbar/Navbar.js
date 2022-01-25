@@ -6,8 +6,6 @@ import Container from "../UI/Container";
 
 import { Link } from "react-scroll";
 
-import Resume from "../assets/Resume(Praveen_Kumar).pdf";
-
 const Navbar = () => {
   return (
     <nav>
@@ -87,14 +85,6 @@ const Navbar = () => {
           >
             <span>Contact</span>
           </Link>
-
-          {/* <a
-            href={Resume}
-            download="Resume(Praveen_Kumar).pdf"
-            rel="noreferrer"
-          >
-            <span>Resume</span>
-          </a> */}
         </div>
       </Container>
       <div className="progress-container">

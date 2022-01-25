@@ -15,13 +15,22 @@ const Card = ({ image, title, language, link }) => {
           className="carousel"
         >
           <div>
-            <img src="https://ph-files.imgix.net/c10ee7d6-2ab9-4008-aef5-797687b07372.jpeg?auto=format&auto=compress&codec=mozjpeg&cs=strip" />
+            <img
+              src="https://ph-files.imgix.net/c10ee7d6-2ab9-4008-aef5-797687b07372.jpeg?auto=format&auto=compress&codec=mozjpeg&cs=strip"
+              alt="dummy pic"
+            />
           </div>
           <div>
-            <img src="https://ph-files.imgix.net/a31c9c18-5748-4a89-891d-04afce0a313c.jpeg?auto=format&auto=compress&codec=mozjpeg&cs=strip" />
+            <img
+              src="https://ph-files.imgix.net/a31c9c18-5748-4a89-891d-04afce0a313c.jpeg?auto=format&auto=compress&codec=mozjpeg&cs=strip"
+              alt="dummy pic"
+            />
           </div>
           <div>
-            <img src="https://i.ytimg.com/vi/LtZRAMoZpHw/maxresdefault.jpg" />
+            <img
+              src="https://i.ytimg.com/vi/LtZRAMoZpHw/maxresdefault.jpg"
+              alt="dummy pic"
+            />
           </div>
         </Carousel>
         <h1>{title}</h1>
