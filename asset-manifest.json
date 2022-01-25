@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.fc96dcc1.css",
-    "main.js": "/Personal-Portfolio/static/js/main.736e7429.js",
+    "main.css": "/Personal-Portfolio/static/css/main.cc6256bc.css",
+    "main.js": "/Personal-Portfolio/static/js/main.b4255ee5.js",
     "static/media/bg.gif": "/Personal-Portfolio/static/media/bg.8c52ef057edb1736e499.gif",
-    "static/media/Resume(Praveen_Kumar).pdf": "/Personal-Portfolio/static/media/Resume(Praveen_Kumar).23c0d57c3142df13ee1b.pdf",
+    "static/media/Resume(Praveen_Kumar).pdf": "/Personal-Portfolio/static/media/Resume(Praveen_Kumar).4400fe6154d43c85576f.pdf",
     "static/media/profilePhoto.png": "/Personal-Portfolio/static/media/profilePhoto.c81bd6516a3ffa442ce8.png",
     "index.html": "/Personal-Portfolio/index.html",
-    "static/media/arrowup.svg": "/Personal-Portfolio/static/media/arrowup.a2ab269e73d91bba041f139e963c03be.svg",
-    "main.fc96dcc1.css.map": "/Personal-Portfolio/static/css/main.fc96dcc1.css.map",
-    "main.736e7429.js.map": "/Personal-Portfolio/static/js/main.736e7429.js.map"
+    "static/media/arrow_up.svg": "/Personal-Portfolio/static/media/arrow_up.fa647ae5a9b37048833b6197e52bebc9.svg",
+    "main.cc6256bc.css.map": "/Personal-Portfolio/static/css/main.cc6256bc.css.map",
+    "main.b4255ee5.js.map": "/Personal-Portfolio/static/js/main.b4255ee5.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc96dcc1.css",
-    "static/js/main.736e7429.js"
+    "static/css/main.cc6256bc.css",
+    "static/js/main.b4255ee5.js"
   ]
 }
