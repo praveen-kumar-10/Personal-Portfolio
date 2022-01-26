@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import "./Navbar.css";
 import { Link } from "react-scroll";
 
-import Resume from "../assets/Resume(Praveen_Kumar).pdf";
+import Resume from "../../assets/Resume(Praveen_Kumar).pdf";
 
 const BottomNav = () => {
   var links = document.getElementsByClassName("link");

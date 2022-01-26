@@ -3,6 +3,7 @@ import React from "react";
 import "./Navbar.css";
 import Logo from "../UI/Logo";
 import Container from "../UI/Container";
+import Resume from "../../assets/Resume(Praveen_Kumar).pdf";
 
 import { Link } from "react-scroll";
 
@@ -75,16 +76,9 @@ const Navbar = () => {
             <span>Projects</span>
           </Link>
 
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={100}
-          >
-            <span>Contact</span>
-          </Link>
+          <a href={Resume} download="Resume(Praveen_Kumar).pdf">
+            <span>Resume</span>
+          </a>
         </div>
       </Container>
       <div className="progress-container">

@@ -1,12 +1,12 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-import Resume from "../assets/Resume(Praveen_Kumar).pdf";
+import Resume from "../../assets/Resume(Praveen_Kumar).pdf";
 
 import "./Intro.css";
 
-import photo from "../assets/profilePhoto.png";
-import bg from "../assets/bg.gif";
+import photo from "../../assets/profilePhoto.png";
+import bg from "../../assets/bg.gif";
 import Container from "../UI/Container";
 
 const Intro = () => {

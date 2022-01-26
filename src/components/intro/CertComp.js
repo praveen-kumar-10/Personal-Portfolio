@@ -1,7 +1,7 @@
 import React from "react";
 
-import CourseraImg from "../assets/coursera.png";
-import LinkedinImg from "../assets/linkedin.png";
+import CourseraImg from "../../assets/coursera.png";
+import LinkedinImg from "../../assets/linkedin.png";
 
 const CertComp = ({ title, org, issued, cred }) => {
   return (

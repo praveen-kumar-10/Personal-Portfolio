@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 
 import "./ScrollBtn.css";
-import arrow from "../assets/arrow_up.svg";
+import arrow from "../../assets/arrow_up.svg";
 
 export default class ScrollToTop extends Component {
-  // var scroll_to_top = document.getElementsByClassName('scroll-to-top');
   constructor(props) {
     super(props);
     this.state = {

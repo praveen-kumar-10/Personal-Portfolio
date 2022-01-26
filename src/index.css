@@ -20,11 +20,13 @@ body {
   justify-content: center;
   flex-direction: column;
   overflow-x: hidden !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
   text-decoration: none;
   font-family: var(--montserrat);
+  -webkit-tap-highlight-color: transparent;
 }
 
 ul {
